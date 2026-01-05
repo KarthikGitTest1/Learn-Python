@@ -1,0 +1,12 @@
+{
+    "web_url": "https://dashboard.abdm.gov.in/abdm/incentivescheme",
+    "db_config": {
+        "host": "127.0.0.1",
+        "user": "root",
+        "password": "root",
+        "database": "test",
+        "table_name": "web_data",
+        "columns": ["s.no", "name", "district","state_ut","Month_Feb_Transactions_unique","Month_Feb_Transactions_total",
+                    "Total_Transactions_since_jan_2023_unique","Total_Transactions_since_jan_2023_total"]
+    }
+}
