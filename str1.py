@@ -16,6 +16,7 @@ print(duplicates)
 counts=Counter(name)
 duplii={ch:cnt for ch,cnt in counts.items() if cnt>1 }
 print(duplii)
+#check
 rname="Orrrangee"
 result="".join(dict.fromkeys(rname))
 print("removed duplicates chars: ",result)
