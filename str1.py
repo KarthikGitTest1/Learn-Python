@@ -18,4 +18,4 @@ duplii={ch:cnt for ch,cnt in counts.items() if cnt>1 }
 print(duplii)
 rname="Orrrangee"
 result="".join(dict.fromkeys(rname))
-print("removed duplicates: ",result)
+print("removed duplicates chars: ",result)
