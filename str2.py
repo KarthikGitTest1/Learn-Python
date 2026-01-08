@@ -103,3 +103,7 @@ print(result)
 duplicates = {ch for ch in s if s.count(ch) > 1}
 print(duplicates)
 print((duplicates))
+
+duplicates = {ch for ch in s if s.count(ch) > 1}
+print(duplicates)
+print((duplicates))
