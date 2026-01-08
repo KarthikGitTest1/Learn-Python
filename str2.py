@@ -37,6 +37,9 @@
 # words = s.split()
 # longest = max(words, key=len)
 # print(longest)
+import re
+
+
 def is_pal(n):
 
     rev = 0
@@ -50,8 +53,51 @@ def is_pal(n):
 
 is_pal(12345)
 
-s = "I love Python"
-result = " ".join(word[::-1] for word in s.split())
+# s = "I love Python"
+# result = " ".join(word[::-1] for word in s.split())
+# print(result)
+
+# duplicates = {ch for ch in s if s.count(ch) > 1}
+# print(duplicates)
+# print((duplicates))
+
+# s = "I love Python programming"
+# words = s.split()
+# longest = max(words, key=len)
+# print(longest)
+
+
+# s = "I love Python, programming!"
+# words = re.findall(r'\b\w+\b', s)
+# longest = max(words, key=len)
+# print(longest)
+
+# s = "python is easy and python is powerful"
+# seen = set()
+# result = []
+
+# for word in s.split():
+#     if word not in seen:
+#         seen.add(word)
+#         result.append(word)
+
+# print(" ".join(result))
+
+
+s = "Hello, world! How are you?"
+
+words = re.findall(r'\w+', s)
+separators = re.findall(r'\W+', s)
+
+words.reverse()
+
+result = ""
+for i in range(len(separators)):
+    result += words[i] + separators[i]
+
+if len(words) > len(separators):
+    result += words[-1]
+
 print(result)
 
 duplicates = {ch for ch in s if s.count(ch) > 1}
